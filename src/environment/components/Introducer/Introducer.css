@@ -11,6 +11,11 @@
     background-size: cover;
 }
 
+.Introducer h1 {
+    text-transform: uppercase;
+    letter-spacing: 0.16rem;
+}
+
 .Introducer h2 {
     text-transform: uppercase;
     letter-spacing: 0.33rem;
