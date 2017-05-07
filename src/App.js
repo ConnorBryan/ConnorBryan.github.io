@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
-import { Container } from 'semantic-ui-react';
 import './App.css';
+import Introducer from './environment/components/Introducer/Introducer';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-          <Container>
-              <h1>Hello world.</h1>
-          </Container>
+          <Introducer/>
       </div>
     );
   }

@@ -1,0 +1,21 @@
+.Introducer {
+    min-height: 100vh;
+    display: flex;
+    align-content: center;
+    flex-direction: column-reverse;
+    padding: 1rem;
+    background: url('/images/hero.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.Introducer h2 {
+    text-transform: uppercase;
+    letter-spacing: 0.33rem;
+}
+
+.Introducer .hidden {
+    text-transform: uppercase;
+}
