@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import SectionMenu from '../SectionMenu/SectionMenu';
-import SectionBody from '../SectionBody/SectionBody';
+import SectionMenu from './components/SectionMenu/SectionMenu';
+import SectionBody from './components/SectionBody/SectionBody';
 import './SectionContainer.css';
 
 export default class SectionContainer extends Component {
@@ -11,6 +11,8 @@ export default class SectionContainer extends Component {
     }
 
     changeActiveSection (index) {
+        const mainOffset = document.getElementById('main').offsetTop;
+        window.scrollTo(0, mainOffset);
         this.setState({ active: index });
     }
 

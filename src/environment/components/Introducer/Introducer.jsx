@@ -4,8 +4,8 @@ import './Introducer.css';
 
 export default class Introducer extends Component {
     scrollToContent () {
-        const mainOffset = document.getElementById('main').offsetTop;
-        window.scrollTo(0, mainOffset);
+        const overviewOffset = document.getElementById('overview').offsetTop;
+        window.scrollTo(0, overviewOffset);
     }
 
     render () {

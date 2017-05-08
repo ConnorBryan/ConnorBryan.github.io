@@ -1,7 +1,11 @@
 export default {
     personal: {
         fullName: 'Connor Bryan',
-        jobTitle: 'Software Engineer'
+        jobTitle: 'Software Engineer',
+        overview: {
+            avatar: '/images/avatar.jpg',
+            text: 'Lorem ipsum dolor sit amet, elitr legere id qui, est ex facer eirmod consequat. Has purto repudiandae id. In eum dico ullamcorper delicatissimi, mei quod accusam in. No tota gloriatur usu, sit labores rationibus definiebas ad. Aeque sanctus moderatius eu qui. At doming tamquam abhorreant ius, ea esse probo facer nam, semper malorum ne est. Ne ancillae scribentur sit. Et sed diceret corpora definitionem, laoreet interesset ea vel, eleifend pertinacia cu his. Quo odio facete nusquam ex, vidit tempor noster ei his. Tation dolores sadipscing ut pro, est ne commodo assueverit.'
+        }
     },
     content: [
         {
