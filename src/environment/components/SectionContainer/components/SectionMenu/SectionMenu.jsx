@@ -51,7 +51,6 @@ export default class SectionMenu extends Component {
                         </Menu.Item>
                     ))}
                 </Menu>
-                {stuck ? <div style={{ height: '6rem' }} /> : null}
             </div>
         );
     }
