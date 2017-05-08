@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Segment, Container, Image } from 'semantic-ui-react';
-import './SectionFooter.css';
+import './Footer.css';
 
 export default class SectionFooter extends Component {
     render () {

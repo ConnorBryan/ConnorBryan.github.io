@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Segment, Button } from 'semantic-ui-react';
 import './Introducer.css';
 
-export default class extends Component {
+export default class Introducer extends Component {
     scrollToContent () {
         const mainOffset = document.getElementById('main').offsetTop;
         window.scrollTo(0, mainOffset);

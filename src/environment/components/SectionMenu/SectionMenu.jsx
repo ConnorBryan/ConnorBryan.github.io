@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { Menu } from 'semantic-ui-react';
+import _ from 'underscore';
 import S from 'string';
 import './SectionMenu.css';
 
-export default class extends Component {
+export default class SectionMenu extends Component {
     constructor (props) {
         super(props);
         this.state = { stuck: false };
@@ -19,29 +20,32 @@ export default class extends Component {
     }
 
     setMenuStickOnScroll () {
-        window.addEventListener('scroll', () => {
+        window.addEventListener('scroll', _.throttle(() => {
+            const { stuck } = this.state;
             const offset = window.pageYOffset;
             const mainOffset = document.getElementById('main').offsetTop;
-            offset >= mainOffset ? this.stick() : this.unstick();
-        });
+            if (offset >= mainOffset) this.stick();
+            if (offset < mainOffset - 100 && stuck) this.unstick();
+        }, 150));
     }
 
     render () {
         const { stuck } = this.state;
-        const { active, collection } = this.props;
+        const { active, content, changeActiveSection } = this.props;
         const fixed = stuck ? 'top' : null;
         return (
             <div className='SectionMenu'>
                 <div id='main' />
                 <Menu
-                    widths={3}
+                    widths={2}
                     fixed={fixed}
                     pointing>
-                    {collection.map((section, index) => (
+                    {content.map((section, index) => (
                         <Menu.Item
                             key={section.name}
                             name={section.name}
-                            active={active === index}>
+                            active={active === index}
+                            onClick={() => changeActiveSection(index)}>
                             <i className={section.icon} /> {S(section.name).capitalize().s}
                         </Menu.Item>
                     ))}

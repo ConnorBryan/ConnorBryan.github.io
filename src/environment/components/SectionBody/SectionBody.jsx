@@ -2,12 +2,9 @@ import React, { Component } from 'react';
 import { Container, Segment, ItemGroup, Item } from 'semantic-ui-react';
 import './SectionBody.css';
 
-class SectionBody extends Component {
-    render() {
-        const { active, collection } = this.props;
-        const activeSection = collection[active];
-        const { tagline, items } = activeSection;
-
+export default class SectionBody extends Component {
+    render () {
+        const { activeContent: { tagline, items } } = this.props;
         return (
             <div className='SectionBody'>
                 <Container>
@@ -34,5 +31,3 @@ class SectionBody extends Component {
         );
     }
 }
-
-export default SectionBody;
