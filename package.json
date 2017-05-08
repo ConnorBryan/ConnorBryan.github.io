@@ -2,14 +2,17 @@
   "name": "connor-bryan-portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ConnorBryan.github.io/ConnorBryan",
   "dependencies": {
     "font-awesome": "^4.7.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "semantic-ui-react": "^0.68.3",
+    "string": "^3.3.3",
     "underscore": "^1.8.3"
   },
   "devDependencies": {
+    "gh-pages": "^0.12.0",
     "react-scripts": "0.9.5",
     "semantic-ui": "^2.2.10"
   },
@@ -17,6 +20,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   }
 }
