@@ -3,20 +3,28 @@ import { Segment, Button } from 'semantic-ui-react';
 import './Introducer.css';
 
 export default class extends Component {
+    scrollToContent () {
+        const mainOffset = document.getElementById('main').offsetTop;
+        window.scrollTo(0, mainOffset);
+    }
+
     render () {
         const { fullName, jobTitle } = this.props;
 
         return (
             <div className='Introducer'>
-                <Segment textAlign='center'>
+                <Segment
+                    compact
+                    secondary
+                    padded
+                    textAlign='center'>
                     <h1>{fullName}</h1>
                     <h2>{jobTitle}</h2>
-                    <Button animated fluid>
+                    <Button
+                        fluid
+                        onClick={this.scrollToContent}>
                         <Button.Content visible>
-                            <h3><i className='fa fa-caret-down' /></h3>
-                        </Button.Content>
-                        <Button.Content hidden>
-                            Learn more
+                            Get to know me <i className='fa fa-caret-down' />
                         </Button.Content>
                     </Button>
                 </Segment>

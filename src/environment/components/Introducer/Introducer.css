@@ -1,9 +1,11 @@
 .Introducer {
-    min-height: 100vh;
+    min-height: 120vh;
     display: flex;
     align-content: center;
     flex-direction: column-reverse;
+    align-items: center;
     padding: 1rem;
+    padding-bottom: 21vh;
     background: url('/images/hero.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
