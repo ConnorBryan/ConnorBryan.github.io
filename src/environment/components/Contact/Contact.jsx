@@ -9,7 +9,7 @@ export default class Contact extends Component {
             <Container className='Contact'>
                 <Grid columns={2}>
                     <Grid.Row>
-                        <Grid.Column>
+                        <Grid.Column mobile={16} tablet={8}>
                             <Segment>
                                 <h3>Get in contact</h3>
                                 <Divider />
@@ -30,7 +30,7 @@ export default class Contact extends Component {
                                     content={location} />
                             </Segment>
                         </Grid.Column>
-                        <Grid.Column>
+                        <Grid.Column mobile={16} tablet={8}>
                             <Segment>
                                 <h3>Find me on the web</h3>
                                 <Divider />
