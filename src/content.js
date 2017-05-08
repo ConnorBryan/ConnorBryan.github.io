@@ -109,8 +109,8 @@ export default {
         phone: '(214) 677-6265',
         email: 'cchromium@gmail.com',
         location: 'In the Dallas/Fort Worth metroplex',
-        github: 'http://www.google.com/',
-        linkedin: 'http://www.google.com/'
+        github: 'https://www.github.com/ConnorBryan',
+        linkedin: 'https://www.linkedin.com/in/connor-bryan-40b992111/'
     },
     stack: [
         {

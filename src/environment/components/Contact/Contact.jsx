@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Grid, Segment, Divider, Message } from 'semantic-ui-react';
+import { Container, Grid, Segment, Divider, Message, Icon } from 'semantic-ui-react';
 import './Contact.css';
 
 export default class Contact extends Component {
@@ -30,20 +30,37 @@ export default class Contact extends Component {
                                     content={location} />
                             </Segment>
                         </Grid.Column>
-                        <Grid.Column mobile={16} tablet={8}>
+                        <Grid.Column
+                            className='social-media'
+                            mobile={16}
+                            tablet={8}>
                             <Segment>
                                 <h3>Find me on the web</h3>
                                 <Divider />
-                                <Message
-                                    size='large'
-                                    icon='github'
-                                    header='GitHub'
-                                    content={github} />
-                                <Message
-                                    size='large'
-                                    icon='linkedin'
-                                    header='LinkedIn'
-                                    content={linkedin} />
+                                <Grid
+                                    columns={2}
+                                    textAlign='center'>
+                                    <Grid.Row>
+                                        <Grid.Column>
+                                            <Message size='large'>
+                                                <Message.Header>
+                                                    <h1>
+                                                        <Icon name='github' /> <a href={github}>GitHub</a>
+                                                    </h1>
+                                                </Message.Header>
+                                            </Message>
+                                        </Grid.Column>
+                                        <Grid.Column>
+                                            <Message size='large'>
+                                                <Message.Header>
+                                                    <h1>
+                                                        <Icon name='linkedin' /> <a href={linkedin}>LinkedIn</a>
+                                                    </h1>
+                                                </Message.Header>
+                                            </Message>
+                                        </Grid.Column>
+                                    </Grid.Row>
+                                </Grid>
                             </Segment>
                         </Grid.Column>
                     </Grid.Row>
