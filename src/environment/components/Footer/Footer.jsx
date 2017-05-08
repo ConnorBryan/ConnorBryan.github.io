@@ -9,7 +9,7 @@ export default class Footer extends Component {
             copyright: { holder, year, allRightsReserved } } = this.props;
 
         return (
-            <Segment>
+            <Segment className='Footer'>
                 <Container>
                     <Segment.Group piled>
                         <Segment>

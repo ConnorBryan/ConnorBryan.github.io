@@ -7,7 +7,7 @@ export default class SectionBody extends Component {
         const { activeContent: { tagline, items } } = this.props;
         return (
             <Container className='SectionBody'>
-                <Segment>
+                <Segment raised>
                     <h1>{tagline}</h1>
                     <ItemGroup>
                         {items.map(item => (

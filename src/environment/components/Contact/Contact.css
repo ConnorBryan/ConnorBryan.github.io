@@ -3,6 +3,11 @@
     margin-bottom: 2rem;
 }
 
+.Contact h3 {
+    text-transform: uppercase;
+    letter-spacing: 0.16rem;
+}
+
 .Contact i {
     margin-right: 0.5rem;
 }
