@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Segment, Item, Header, Comment } from 'semantic-ui-react';
+import { Container, Segment, Item, Comment } from 'semantic-ui-react';
 import './Overview.css';
 
 export default class Overview extends Component {
@@ -14,7 +14,9 @@ export default class Overview extends Component {
                     <Segment>
                         <Item.Group>
                             <Item>
-                                <Item.Image src={avatar} size='medium'/>
+                                <Item.Image
+                                    src={avatar}
+                                    size='medium'/>
                                 <Item.Content>
                                     <Item.Header>Overview</Item.Header>
                                     <Item.Description className='description'>{text}</Item.Description>
