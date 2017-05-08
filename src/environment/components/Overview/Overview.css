@@ -3,3 +3,8 @@
     padding-top: 20vh;
     padding-bottom: 20vh;
 }
+
+.Overview .description {
+    font-size: 1.2rem !important;
+    line-height: 2rem !important;
+}
