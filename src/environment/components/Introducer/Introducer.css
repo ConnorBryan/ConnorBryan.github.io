@@ -1,5 +1,6 @@
 .Introducer {
     min-height: 120vh;
+    min-width: 100vw;
     display: flex;
     align-content: center;
     flex-direction: column-reverse;

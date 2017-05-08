@@ -22,6 +22,8 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "destroy": "rm -rf images && rm -rf static && rm -rf index.html && rm -rf asset-manifest.json && rm -rf favicon.ico",
+    "move": "cp -r build/images images && cp -r build/static static && cp -r build/index.html index.html && cp -r build/asset-manifest.json asset-manifest.json && cp -r build/favicon.ico favicon.ico && rm -rf build",
+    "deploy": "yarn destroy && yarn build && yarn move"
   }
 }
