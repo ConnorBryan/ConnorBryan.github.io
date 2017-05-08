@@ -1,0 +1,12 @@
+.SectionBody {
+    margin-top: 2rem;
+}
+
+.SectionBody h1 {
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.SectionBody .item {
+    margin-bottom: 5rem !important;
+}

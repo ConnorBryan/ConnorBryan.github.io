@@ -8,7 +8,7 @@ export default class extends Component {
         const { active, collection } = this.props;
         return (
             <div className='SectionMenu'>
-                <Menu widths={3}>
+                <Menu widths={3} pointing>
                     {collection.map((section, index) => (
                         <Menu.Item
                             key={section.name}

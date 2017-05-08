@@ -8,20 +8,18 @@ export default class extends Component {
 
         return (
             <div className='Introducer'>
-                <Container >
-                    <Segment textAlign='center'>
-                        <h1>{fullName}</h1>
-                        <h2>{jobTitle}</h2>
-                        <Button animated fluid>
-                            <Button.Content visible>
-                                <h3><i className='fa fa-caret-down' /></h3>
-                            </Button.Content>
-                            <Button.Content hidden>
-                                Learn more
-                            </Button.Content>
-                        </Button>
-                    </Segment>
-                </Container>
+                <Segment textAlign='center'>
+                    <h1>{fullName}</h1>
+                    <h2>{jobTitle}</h2>
+                    <Button animated fluid>
+                        <Button.Content visible>
+                            <h3><i className='fa fa-caret-down' /></h3>
+                        </Button.Content>
+                        <Button.Content hidden>
+                            Learn more
+                        </Button.Content>
+                    </Button>
+                </Segment>
             </div>
         );
     }
