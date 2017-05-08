@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Segment, Button } from 'semantic-ui-react';
+import { Segment, Button } from 'semantic-ui-react';
 import './Introducer.css';
 
 export default class extends Component {
