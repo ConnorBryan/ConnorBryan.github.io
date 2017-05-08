@@ -2,7 +2,7 @@
   "name": "connor-bryan-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ConnorBryan.github.io/ConnorBryan",
+  "homepage": "https://ConnorBryan.github.io/",
   "dependencies": {
     "font-awesome": "^4.7.0",
     "react": "^15.5.4",
