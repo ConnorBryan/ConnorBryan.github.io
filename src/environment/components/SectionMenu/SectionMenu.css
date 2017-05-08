@@ -3,3 +3,12 @@
 .SectionMenu .menu {
     margin: 0 !important;
 }
+
+.SectionMenu .item {
+    text-transform: uppercase !important;
+    letter-spacing: 0.16rem !important;
+}
+
+.SectionMenu i {
+    margin-right: 1rem;
+}

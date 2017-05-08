@@ -42,7 +42,7 @@ export default class extends Component {
                             key={section.name}
                             name={section.name}
                             active={active === index}>
-                            {S(section.name).capitalize().s}
+                            <i className={section.icon} /> {S(section.name).capitalize().s}
                         </Menu.Item>
                     ))}
                 </Menu>

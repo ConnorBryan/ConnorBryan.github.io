@@ -8,6 +8,7 @@ export default {
         collection: [
             {
                 name: 'skills',
+                icon: 'fa fa-graduation-cap',
                 tagline: 'What I bring to the table',
                 items: [
                     {
@@ -78,11 +79,13 @@ export default {
             },
             {
                 name: 'resume',
+                icon: 'fa fa-file-text-o',
                 tagline: 'What I\'ve done for others',
                 items: []
             },
             {
                 name: 'contact',
+                icon: 'fa fa-mobile',
                 tagline: 'How to get in touch',
                 items: []
             }
