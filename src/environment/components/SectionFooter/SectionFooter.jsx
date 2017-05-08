@@ -14,10 +14,10 @@ export default class SectionFooter extends Component {
                     <Segment.Group piled>
                         <Segment>
                             <h3>Made using</h3>
-                            <Image.Group size={stack.length}>
+                            <Image.Group size='tiny'>
                                 {stack.map(technology => (
                                     <Image
-                                        size='tiny'
+                                        key={technology.name}
                                         alt={technology.name}
                                         src={technology.image}
                                         href={technology.link} />

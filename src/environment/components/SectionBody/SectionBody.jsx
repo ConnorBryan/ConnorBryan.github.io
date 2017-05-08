@@ -15,14 +15,14 @@ class SectionBody extends Component {
                     <Segment>
                         <ItemGroup>
                             {items.map(item => (
-                                <Item>
+                                <Item key={item.heading}>
                                     <Item.Image
                                         src={item.image}
                                         size='small' />
                                     <Item.Content>
                                         <h2>{item.heading}</h2>
-                                        {item.text.map(line => (
-                                            <p>{line}</p>
+                                        {item.text.map((line, index) => (
+                                            <p key={index}>{line}</p>
                                         ))}
                                     </Item.Content>
                                 </Item>
