@@ -1,4 +1,5 @@
 .Overview {
-    margin-top: 20vh;
-    margin-bottom: 20vh;
+    background: url('/images/overview-texture.png');
+    padding-top: 20vh;
+    padding-bottom: 20vh;
 }

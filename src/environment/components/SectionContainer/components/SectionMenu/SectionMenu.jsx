@@ -37,6 +37,7 @@ export default class SectionMenu extends Component {
             <div className='SectionMenu'>
                 <div id='main' />
                 <Menu
+                    inverted
                     widths={2}
                     fixed={fixed}
                     pointing>
