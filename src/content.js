@@ -101,6 +101,11 @@ export default {
             ]
         }
     ],
+    contact: {
+        phone: '(214) 677-6265',
+        email: 'cchromium@gmail.com',
+        location: 'In the Dallas/Fort Worth metroplex'
+    },
     stack: [
         {
             image: '/images/react.svg',

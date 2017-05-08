@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Segment, Container, Image } from 'semantic-ui-react';
 import './Footer.css';
 
-export default class SectionFooter extends Component {
+export default class Footer extends Component {
     render () {
         const {
             stack,
